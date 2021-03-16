@@ -44,59 +44,20 @@ body {font-family: "Lato", sans-serif}
  <button onclick="hideAll()">Hide All</button>
  <button onclick="showShark()">Show Me Sharks</button>
  
- <div class="archiveBox">Weekday Mornings
+ <div class="archiveBox" id="bed">Weekday Mornings
  		<br>
 	<a href="comics/6.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/6.png" style="width:50%"></a>
 		<br>
 	<a>2021.03.15</a>
  </div>
  	
- 	 <div class="archiveBox shark">Dr Shark, Part II
+ 	 <div class="archiveBox" id="shark">Dr Shark, Part II
  		<br>
 	<a href="comics/4.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/4.png" style="width:50%"></a>
 		<br>
 	<a>2021.02.28</a>
  </div>
  	
- 
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
-	<div class="w3-row w3-padding-32">
-       <div class="w3-third" id="archiveItem">
-        <p><a href="comics/6.html">Weekday Mornings<a></p>
-		<p><a>2021.03.15</a></p>
-     	<p><a href="comics/6.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/6.png" style="width:50%"></a></p>
-      </div>
-       <div class="w3-third">
-        <p><a href="comics/5.html">Covid Farts<a></p>
-		<p><a>2021.03.08</a></p>
-     	<p><a href="comics/5.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/5.png" style="width:50%"></a></p>
-      </div>
-       <div class="w3-third">
-        <p><a href="comics/4.html">Dr. Shark, Part II<a></p>
-        <p><a>2021.02.28</a></p>
-        <p><a href="comics/4.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/4.png" style="width:25%"></a></p>
-      </div>  
-    </div>
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
-	<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p><a href="comics/3.html">Dr. Shark<a></p>
-        <p><a>2021.02.22</a></p>
-        <p><a href="comics/3.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/3.png" style="width:25%"></a></p>
-      </div> 
-     <div class="w3-third">
-        <p><a href="comics/2.html">The Answers Inside Us<a></p>
-		<p><a>2021.02.15</a></p>
-     	<p><a href="comics/2.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/2.png" style="width:50%"></a></p>
-      </div>
-     <div class="w3-third">
-        <p><a href="comics/1.html">How To: Forklift<a></p>
-        <p><a>2021.02.08</a></p>
-      	<p><a href="comics/1.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/1.png" style="width:50%"></a></p>
-	  </div>
-      </div>
-    </div>
-  </div>
 
 <!-- End Page Content -->
 </div>
@@ -130,12 +91,12 @@ window.onclick = function(event) {
 }
 
 function hideAll() {
-	document.getElementsByClassName("archiveBox").style.display= "none";
+	document.getElementById("bed").style.display="none";
+	document.getElementById("shark").style.display="none";
 	}
 	
 function showShark() {
-	hideAll();
-	document.getElementsByClassName("shark").style.display= "block";
+	document.getElementById("shark").style.display= "block";
 	}
 </script>
 
