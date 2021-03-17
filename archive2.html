@@ -41,23 +41,54 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Comic Section -->
- <button onclick="hideAll()">Hide All</button>
+ <button onclick="hideAll()">Hide All1</button>
+ <button onclick="hideAll()">Hide All2</button>
  <button onclick="showShark()">Show Me Sharks</button>
  
- <div class="archiveBox" id="bed">Weekday Mornings
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+
+ <div class="archiveBox" id="WeekdayMornings">Weekday Mornings
  		<br>
 	<a href="comics/6.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/6.png" style="width:50%"></a>
 		<br>
 	<a>2021.03.15</a>
  </div>
  	
- 	 <div class="archiveBox" id="shark">Dr Shark, Part II
+ <div class="archiveBox" id="CovidFarts">Covid Farts
+ 		<br>
+	<a href="comics/5.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/5.png" style="width:50%"></a>
+		<br>
+	<a>2021.03.8</a>
+ </div>
+ 	
+  <div class="archiveBox" id="DrShark2">Dr Shark, Part II
  		<br>
 	<a href="comics/4.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/4.png" style="width:50%"></a>
 		<br>
-	<a>2021.02.28</a>
+	<a>2021.03.01</a>
+ </div>
+ 
+ <div class="archiveBox" id="DrShark1">Dr Shark, Part I
+ 		<br>
+	<a href="comics/3.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/3.png" style="width:50%"></a>
+		<br>
+	<a>2021.02.22</a>
  </div>
  	
+ <div class="archiveBox" id="AnswersInside">The Answers Inside Us
+ 		<br>
+	<a href="comics/2.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/2.png" style="width:50%"></a>
+		<br>
+	<a>2021.02.15</a>
+ </div>
+ 
+  <div class="archiveBox" id="H2_Forklift">How to: Forklift
+ 		<br>
+	<a href="comics/1.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/1.png" style="width:50%"></a>
+		<br>
+	<a>2021.02.08</a>
+ </div>	
+</div>
 
 <!-- End Page Content -->
 </div>
@@ -89,6 +120,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var allIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"]
+
+
+function hideAll2()
+for (i = 0; allIds < substr.length; ++i) {
+    document.getElementById(allIds).style.display="none"
+}
+
 
 function hideAll() {
 	document.getElementById("bed").style.display="none";
