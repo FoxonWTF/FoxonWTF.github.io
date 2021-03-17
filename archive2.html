@@ -12,7 +12,6 @@ body {font-family: "Lato", sans-serif}
   float: left;
   text-align: center;
   width: 250px;
-  height: 500px;
   border: 1px solid gray;
   border-radius: 10 px;
   margin: 4px;
@@ -43,9 +42,9 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Comic Section -->
- <button onclick="hideAll()">Hide All1</button>
+ <button onclick="hideSharks()">Hide Sharks</button>
  <button onclick="hideAll2()">Hide All2</button>
- <button onclick="showShark()">Show Me Sharks</button>
+ <button onclick="showSharks()">Show Me Sharks</button>
  
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
 
@@ -132,12 +131,12 @@ for (i = 0; allIds < substr.length; ++i) {
 }
 
 
-function hideAll() {
+function hidesharks() {
 	document.getElementById("DrShark1").style.display="none";
 	document.getElementById("DrShark2").style.display="none";
 	}
 	
-function showShark() {
+function showSharks() {
 	document.getElementById("DrShark1").style.display="block";
 	document.getElementById("DrShark2").style.display="block";
 	}
