@@ -42,6 +42,7 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Comic Section -->
+ <button onclick="hideAll()">Hide All</button>
  <button onclick="hideSharks()">Hide Sharks</button>
  <button onclick="showSharks()">Show Me Sharks</button>
  
@@ -121,6 +122,12 @@ window.onclick = function(event) {
   }
 }
 
+function hideAll() {
+	var allIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"];
+	var arrayLength = allIds.length;
+	for (var i = 0; i < arrayLength; i++) {
+    document.getElementById(allIds[i]).style.display="none";
+}
 
 function hideSharks() {
 	document.getElementById("DrShark1").style.display="none";
