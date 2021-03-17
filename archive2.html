@@ -43,6 +43,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Comic Section -->
  <button onclick="hideAll()">Hide All</button>
+ <button onclick="showAll()">Show All</button>
  <button onclick="hideSharks()">Hide Sharks</button>
  <button onclick="showSharks()">Show Me Sharks</button>
  
@@ -122,11 +123,20 @@ window.onclick = function(event) {
   }
 }
 
+
+var allIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"];
+
 function hideAll() {
-	var allIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"];
 	var arrayLength = allIds.length;
 	for (var i = 0; i < arrayLength; i++) {
     document.getElementById(allIds[i]).style.display="none";
+    }
+}
+
+function showAll() {
+	var arrayLength = allIds.length;
+	for (var i = 0; i < arrayLength; i++) {
+    document.getElementById(allIds[i]).style.display="block";
     }
 }
 
@@ -136,6 +146,7 @@ function hideSharks() {
 	}
 	
 function showSharks() {
+	hideAll();
 	document.getElementById("DrShark1").style.display="block";
 	document.getElementById("DrShark2").style.display="block";
 	}
