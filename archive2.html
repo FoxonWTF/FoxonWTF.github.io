@@ -9,7 +9,7 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .archiveBox {
-  float: left;
+  align: center;
   text-align: center;
   width: 250px;
   border: 1px solid gray;
@@ -122,14 +122,12 @@ window.onclick = function(event) {
   }
 }
 
-var allIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"]
-
-
-function hideAll2()
-for (i = 0; allIds < substr.length; ++i) {
-    document.getElementById(allIds).style.display="none"
+function hideAll2() {
+	var allIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"]
+	for (i = 0; allIds < substr.length; ++i) {
+    	document.getElementById(allIds).style.display="none"
+	}
 }
-
 
 function hidesharks() {
 	document.getElementById("DrShark1").style.display="none";
