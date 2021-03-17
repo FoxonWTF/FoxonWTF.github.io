@@ -42,10 +42,10 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Comic Section -->
- <button onclick="hideAll()">Hide All</button>
  <button onclick="showAll()">Show All</button>
- <button onclick="hideSharks()">Hide Sharks</button>
- <button onclick="showSharks()">Show Me Sharks</button>
+ <button onclick="showSharks()">Just Sharks</button>
+ <button onclick="showStickPeople()">Just Stick People</button>
+
  
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
 
@@ -139,17 +139,18 @@ function showAll() {
     document.getElementById(allIds[i]).style.display="block";
     }
 }
-
-function hideSharks() {
-	document.getElementById("DrShark1").style.display="none";
-	document.getElementById("DrShark2").style.display="none";
-	}
 	
 function showSharks() {
 	hideAll();
 	document.getElementById("DrShark1").style.display="block";
 	document.getElementById("DrShark2").style.display="block";
 	}
+	
+function showStickPeople() {
+	hideAll();
+	document.getElementById("H2_Forklift").style.display="block";
+	document.getElementById("CovidFarts").style.display="block";
+	}	
 </script>
 
 </body>
