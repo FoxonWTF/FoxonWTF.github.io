@@ -157,3 +157,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
 .w3-text-light-grey,.w3-hover-text-light-grey:hover,.w3-text-light-gray,.w3-hover-text-light-gray:hover{color:#f1f1f1!important}
 .w3-text-dark-grey,.w3-hover-text-dark-grey:hover,.w3-text-dark-gray,.w3-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.archiveBox {
+  width: 300px;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10 px;
+  margin: 4px;
+  padding: 6px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  float: left;
+  }
+
+.archiveButton {
+	width: 150px;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 10px;
+	background-color: #fdf5e6;
+	opacity: 1.0;
+	}

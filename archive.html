@@ -31,52 +31,60 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Comic Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
-		<div class="w3-row w3-padding-32">
-       <div class="w3-third" id="archiveItem">
-        <p><a href="comics/6.html">Weekday Mornings<a></p>
-		<p><a>2021.03.15</a></p>
-     	<p><a href="comics/6.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/6.png" style="width:50%"></a></p>
-      </div>
-       <div class="w3-third">
-        <p><a href="comics/5.html">Covid Farts<a></p>
-		<p><a>2021.03.08</a></p>
-     	<p><a href="comics/5.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/5.png" style="width:50%"></a></p>
-      </div>
-       <div class="w3-third">
-        <p><a href="comics/4.html">Dr. Shark, Part II<a></p>
-        <p><a>2021.02.28</a></p>
-        <p><a href="comics/4.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/4.png" style="width:25%"></a></p>
-      </div>  
 
-    </div>
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
-		<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p><a href="comics/3.html">Dr. Shark<a></p>
-        <p><a>2021.02.22</a></p>
-        <p><a href="comics/3.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/3.png" style="width:25%"></a></p>
-      </div> 
-     <div class="w3-third">
-        <p><a href="comics/2.html">The Answers Inside Us<a></p>
-		<p><a>2021.02.15</a></p>
-     	<p><a href="comics/2.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/2.png" style="width:50%"></a></p>
-      </div>
-     <div class="w3-third">
-        <p><a href="comics/1.html">How To: Forklift<a></p>
-        <p><a>2021.02.08</a></p>
-      	<p><a href="comics/1.html" class="w3-round w3-margin-bottom" alt="Random Name"><img src="archive-thumbs/1.png" style="width:50%"></a></p>
-	  </div>
-      </div>
-    </div>
-  </div>
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+
+<div class="w3-padding-16">
+ <button class="archiveButton" id="buttonShowAll" onclick="showAllArchiveItems()" style="opacity:0.6">Show All</button>
+ <button class="archiveButton" id="buttonShowSharks" onclick="showSharks()">Sharks</button>
+ <button class="archiveButton" id="buttonStickPeople" onclick="showStickPeople()">Stick Figures</button>
+</div>
+
+ <div class="archiveBox" id="WeekdayMornings">Weekday Mornings
+ 		<br>
+	<a href="comics/6.html" alt="Random Name"><img src="archive-thumbs/6.png" style="width: 80%"></a>
+		<br>
+	<a>2021.03.15</a>
+ </div>
+ 	
+ <div class="archiveBox" id="CovidFarts">Covid Farts
+ 		<br>
+	<a href="comics/5.html" alt="Random Name"><img src="archive-thumbs/5.png" style="width: 80%"></a>
+		<br>
+	<a>2021.03.8</a>
+ </div>
+ 	
+  <div class="archiveBox" id="DrShark2">Dr Shark, Part II
+ 		<br>
+	<a href="comics/4.html" alt="Random Name"><img src="archive-thumbs/4.png" style="width: 80%"></a>
+		<br>
+	<a>2021.03.01</a>
+ </div>
+ 
+ <div class="archiveBox" id="DrShark1">Dr Shark, Part I
+ 		<br>
+	<a href="comics/3.html" alt="Random Name"><img src="archive-thumbs/3.png" style="width: 80%"></a>
+		<br>
+	<a>2021.02.22</a>
+ </div>
+ 	
+ <div class="archiveBox" id="AnswersInside">The Answers Inside Us
+ 		<br>
+	<a href="comics/2.html" alt="Random Name"><img src="archive-thumbs/2.png" style="width: 80%"></a>
+		<br>
+	<a>2021.02.15</a>
+ </div>
+ 
+  <div class="archiveBox" id="H2_Forklift">How to: Forklift
+ 		<br>
+	<a href="comics/1.html" alt="Random Name"><img src="archive-thumbs/1.png" style="width: 80%"></a>
+		<br>
+	<a>2021.02.08</a>
+ </div>	
+</div>
 
 <!-- End Page Content -->
 </div>
-
-
-<!-- Large Bottom Image -->
-  <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
   
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-sand w3-xlarge">
@@ -106,14 +114,62 @@ window.onclick = function(event) {
   }
 }
 
-function hideAll() {
-	document.getElementByID("archiveItem").style.display= "none";
+
+var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"];
+var allButtonIds = ["buttonShowAll", "buttonShowSharks", "buttonStickPeople"];
+
+function hideAllArchiveItems() {
+	var archiveItemsArrayLength = allArchiveItemIds.length;
+	for (var i = 0; i < archiveItemsArrayLength; i++) {
+    document.getElementById(allArchiveItemIds[i]).style.display="none";
+    }
+}
+
+function showAllArchiveItems() {
+	var archiveItemArrayLength = allArchiveItemIds.length;
+	for (var i = 0; i < archiveItemArrayLength; i++) {
+    document.getElementById(allArchiveItemIds[i]).style.display="block";
+    } 
+    showAllButtons();
+    hideOneButton("buttonShowAll");
+}
+
+function hideAllButtons() {
+	var archiveItemsArrayLength = allArchiveItemIds.length;
+	for (var i = 0; i < archiveItemsArrayLength; i++) {
+    document.getElementById(allButtonIds[i]).style.cursor="not-allowed";
+    document.getElementById(allButtonIds[i]).style.opacity="0.6";
+	}
+}
+
+function showAllButtons() {
+	var arrayLength = allButtonIds.length;
+	for (var i = 0; i < arrayLength; i++) {
+    document.getElementById(allButtonIds[i]).style.cursor="pointer";
+    document.getElementById(allButtonIds[i]).style.opacity="1.0";
+    }
+}
+
+function hideOneButton(i) {
+	document.getElementById(i).style.cursor="not-allowed";
+    document.getElementById(i).style.opacity="0.6";
+	}
+
+function showSharks() {
+	hideAllArchiveItems();
+	document.getElementById("DrShark1").style.display="block";
+	document.getElementById("DrShark2").style.display="block";
+	showAllButtons();
+	hideOneButton("buttonShowSharks");
 	}
 	
-function showShark() {
-	hideAll();
-	document.getElementById("shark").style.display= "block";
-	}
+function showStickPeople() {
+	hideAllArchiveItems();
+	document.getElementById("H2_Forklift").style.display="block";
+	document.getElementById("CovidFarts").style.display="block";
+	showAllButtons();
+	hideOneButton("buttonStickPeople");
+	}	
 </script>
 
 </body>
