@@ -50,6 +50,13 @@
 	<button class="archiveButton" id="buttonStickPeople" onclick="showStickPeople()">Stick Figures</button>
  </div>
 
+ <div class="archiveBox" id="H2_PlayGames">How to: Play Games
+ 		<br>
+	<a href="comics/7.html" alt="Random Name"><img src="archive-thumbs/7.png" style="width: 80%"></a>
+		<br>
+	<a>2021.03.22</a>
+ </div>
+ 
  <div class="archiveBox" id="WeekdayMornings">Weekday Mornings
  		<br>
 	<a href="comics/6.html" alt="Random Name"><img src="archive-thumbs/6.png" style="width: 80%"></a>
@@ -127,7 +134,7 @@ window.onclick = function(event) {
 }
 
 
-var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings"];
+var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames"];
 var allButtonIds = ["buttonShowAll", "buttonShowSharks", "buttonStickPeople"];
 
 function hideAllArchiveItems() {
@@ -150,7 +157,7 @@ function hideAllButtons() {
 	var archiveItemsArrayLength = allArchiveItemIds.length;
 	for (var i = 0; i < archiveItemsArrayLength; i++) {
     document.getElementById(allButtonIds[i]).style.cursor="not-allowed";
-    document.getElementById(allButtonIds[i]).style.opacity="0.6";
+    document.getElementById(allButtonIds[i]).style.opacity="0.4";
 	}
 }
 
@@ -164,7 +171,7 @@ function showAllButtons() {
 
 function hideOneButton(i) {
 	document.getElementById(i).style.cursor="not-allowed";
-    document.getElementById(i).style.opacity="0.6";
+    document.getElementById(i).style.opacity="0.4";
 	}
 
 function showSharks() {
@@ -179,6 +186,7 @@ function showStickPeople() {
 	hideAllArchiveItems();
 	document.getElementById("H2_Forklift").style.display="block";
 	document.getElementById("CovidFarts").style.display="block";
+	document.getElementById("H2_PlayGames").style.display="block";
 	showAllButtons();
 	hideOneButton("buttonStickPeople");
 	}	
