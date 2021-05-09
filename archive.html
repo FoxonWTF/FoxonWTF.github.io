@@ -50,6 +50,13 @@
 	<button class="archiveButton" id="buttonStickPeople" onclick="showStickPeople()">Stick Figures</button>
  </div>
 
+  <div class="archiveBox" id="How to: Life">How to: Life
+ 		<br>
+	<a href="comics/0014.html" alt="Random Name"><img src="archive-thumbs/0014.png" style="width: 80%"></a>
+		<br>
+	<a>2021.05.09</a>
+ </div>
+ 
   <div class="archiveBox" id="How to: Spoon">How to: Spoon
  		<br>
 	<a href="comics/0013.html" alt="Random Name"><img src="archive-thumbs/0013.png" style="width: 80%"></a>
@@ -175,7 +182,7 @@ window.onclick = function(event) {
 }
 
 
-var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "How to:Whale01", "How to: Wail01", "GreenMonsterBlueLagoon", "How to: Spoon"];
+var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "How to:Whale01", "How to: Wail01", "GreenMonsterBlueLagoon", "How to: Spoon", "How to: Life"];
 var allButtonIds = ["buttonShowAll", "buttonShowSharks", "buttonStickPeople"];
 
 function hideAllArchiveItems() {
@@ -232,6 +239,7 @@ function showStickPeople() {
 	document.getElementById("How to:Whale01").style.display="block";
 	document.getElementById("How to: Wail01").style.display="block";
 	document.getElementById("How to: Spoon").style.display="block";	
+	document.getElementById("How to: Life").style.display="block";	
 	showAllButtons();
 	hideOneButton("buttonStickPeople");
 	}	
