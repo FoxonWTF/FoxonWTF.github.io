@@ -50,6 +50,13 @@
 	<button class="archiveButton" id="buttonStickPeople" onclick="showStickPeople()">Stick Figures</button>
  </div>
 
+  <div class="archiveBox" id="H2_ChangeDiapers">How to: Change Diapers
+ 		<br>
+	<a href="comics/0016.html" alt="Random Name"><img src="archive-thumbs/0016.png" style="width: 80%"></a>
+		<br>
+	<a>2021.05.23</a>
+ </div>
+ 
   <div class="archiveBox" id="Is This How Stocks Work?">Is This How Stocks Work?
  		<br>
 	<a href="comics/0015.html" alt="Random Name"><img src="archive-thumbs/0015.png" style="width: 80%"></a>
@@ -57,14 +64,14 @@
 	<a>2021.05.16</a>
  </div>
 
-  <div class="archiveBox" id="How to: Life">How to: Life
+  <div class="archiveBox" id="H2_Life">How to: Life
  		<br>
 	<a href="comics/0014.html" alt="Random Name"><img src="archive-thumbs/0014.png" style="width: 80%"></a>
 		<br>
 	<a>2021.05.09</a>
  </div>
  
-  <div class="archiveBox" id="How to: Spoon">How to: Spoon
+  <div class="archiveBox" id="H2_Spoon">How to: Spoon
  		<br>
 	<a href="comics/0013.html" alt="Random Name"><img src="archive-thumbs/0013.png" style="width: 80%"></a>
 		<br>
@@ -78,14 +85,14 @@
 	<a>2021.04.25</a>
  </div>
  
-  <div class="archiveBox" id="How to: Wail01">How to: Wail
+  <div class="archiveBox" id="H2_Wail">How to: Wail
  		<br>
 	<a href="comics/0011.html" alt="Random Name"><img src="archive-thumbs/0011.png" style="width: 80%"></a>
 		<br>
 	<a>2021.04.18</a>
  </div>
  
- <div class="archiveBox" id="How to:Whale01">How to: Whale
+ <div class="archiveBox" id="H2_Whale">How to: Whale
  		<br>
 	<a href="comics/0010.html" alt="Random Name"><img src="archive-thumbs/0010.png" style="width: 80%"></a>
 		<br>
@@ -189,7 +196,7 @@ window.onclick = function(event) {
 }
 
 
-var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "How to:Whale01", "How to: Wail01", "GreenMonsterBlueLagoon", "How to: Spoon", "How to: Life", "Is This How Stocks Work?"];
+var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "H2_Whale", "H2_Wail", "GreenMonsterBlueLagoon", "H2_Spoon", "H2_Life", "Is This How Stocks Work?"];
 var allButtonIds = ["buttonShowAll", "buttonShowSharks", "buttonStickPeople"];
 
 function hideAllArchiveItems() {
@@ -243,10 +250,10 @@ function showStickPeople() {
 	document.getElementById("CovidFarts").style.display="block";
 	document.getElementById("H2_PlayGames").style.display="block";
 	document.getElementById("H2_PlayAnotherGame").style.display="block";
-	document.getElementById("How to:Whale01").style.display="block";
-	document.getElementById("How to: Wail01").style.display="block";
-	document.getElementById("How to: Spoon").style.display="block";	
-	document.getElementById("How to: Life").style.display="block";	
+	document.getElementById("H2_Whale").style.display="block";
+	document.getElementById("H2_Wail").style.display="block";
+	document.getElementById("H2_Spoon").style.display="block";	
+	document.getElementById("H2_Life").style.display="block";	
 	showAllButtons();
 	hideOneButton("buttonStickPeople");
 	}	
