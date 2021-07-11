@@ -50,6 +50,13 @@
 	<button class="archiveButton" id="buttonStickPeople" onclick="showStickPeople()">Stick Figures</button>
  </div>
 
+<div class="archiveBox" id="H2_WrapBabies">How to: Wrap Babies
+ 		<br>
+	<a href="comics/0023.html" alt="Random Name"><img src="archive-thumbs/0023.png" style="width: 80%"></a>
+		<br>
+	<a>2021.07.11</a>
+ </div>
+
 <div class="archiveBox" id="Tri-Monster">Tri-Monster
  		<br>
 	<a href="comics/0022.html" alt="Random Name"><img src="archive-thumbs/0022.png" style="width: 80%"></a>
@@ -238,7 +245,7 @@ window.onclick = function(event) {
 }
 
 
-var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "H2_Whale", "H2_Wail", "GreenMonsterBlueLagoon", "H2_Spoon", "H2_Life", "Is This How Stocks Work?", "H2_ChangeDiapers", "Red Rover", "Sounds in the Night", "Power Training", "H2_ChangingStations", "Dark Arts", "Tri-Monster"];
+var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "H2_Whale", "H2_Wail", "GreenMonsterBlueLagoon", "H2_Spoon", "H2_Life", "Is This How Stocks Work?", "H2_ChangeDiapers", "Red Rover", "Sounds in the Night", "Power Training", "H2_ChangingStations", "Dark Arts", "Tri-Monster", "H2_WrapBabies"];
 var allButtonIds = ["buttonShowAll", "buttonShowSharks", "buttonStickPeople"];
 
 function hideAllArchiveItems() {
@@ -296,7 +303,8 @@ function showStickPeople() {
 	document.getElementById("H2_Wail").style.display="block";
 	document.getElementById("H2_Spoon").style.display="block";	
 	document.getElementById("H2_Life").style.display="block";	
-	document.getElementById("H2_ChangingStations").style.display="block";		
+	document.getElementById("H2_ChangingStations").style.display="block";	
+	document.getElementById("H2_WrapBabies").style.display="block";		
 	showAllButtons();
 	hideOneButton("buttonStickPeople");
 	}	
