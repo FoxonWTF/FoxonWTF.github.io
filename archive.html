@@ -47,6 +47,7 @@
  <div class="w3-padding-16">
 	<button class="archiveButton" id="buttonShowAll" onclick="showAllArchiveItems()" style="opacity:0.6">Show All</button>
 	<button class="archiveButton" id="buttonShowYoga" onclick="showYoga()">Yoga</button>
+	<button class="archiveButton" id="buttonLibAndRon" onclick="showLibAndRon()">Lib & Ron</button>
 	<button class="archiveButton" id="buttonStickPeople" onclick="showStickPeople()">Stick Figures</button>
  </div>
  
@@ -787,7 +788,7 @@ window.onclick = function(event) {
 var allArchiveItemIds = ["H2_Forklift", "AnswersInside", "DrShark1", "DrShark2", "CovidFarts", "WeekdayMornings", "H2_PlayGames", "H2_PlayAnotherGame", "SomedayWellLookBack", "H2_Whale", "H2_Wail", "GreenMonsterBlueLagoon", "H2_Spoon", "H2_Life", "Is This How Stocks Work?", "H2_ChangeDiapers", "Red Rover", "Sounds in the Night", "Power Training", "H2_ChangingStations", "Dark Arts", "Tri-Monster", "H2_WrapBabies", "Changing Is Magic", "WorkingLate", "MakeOutFaces", "FourLegsGood", "WhatsBestInLife", "FoodLabels-Fish", "FoodLabels-Apples", "GentlemenDontTinkle", "LadiesDontPoop", "ChickenWish", "Unstoppable", "NightRides", "Wannabe", "StagesSkillDevelopment", "TalkToTheFace", "HowRabbitsWork", "Top Climber", "HowSocietyWorks", "TeddyBats", "HolidayDecorations", "Monkey House", "HolidayCards", "WhiteChristmas", "PartyInBack", "Re-BrandOfMadness", "MostFun1", "MostFun2", "PizzaDate", "YourPaintingIsGood", "LifeAdvice", "CanIHelpYou", "MostFun3", "LittleLoves", "ToiletPaperMath", "DontConfuseTheApps", "DontWorryCaterpillar", "PressToOperate", "ThisMuch", "ShenanigansBrewing001", "NoPeeingBeRespectful", "Shave Fail", "Two Minds", "Gallery of Rogues", "Optimus Bias", "Bathroom Signs", "LateMode", "ShiningSun", "DhalsimXmas", "SquidAndWhale", "CheapDate", "FindingAPath", "YogaJosen-01", "YogaJosen-02", "YogaJosen-03", "YogaJosen-04", "YogaJosen-05", "YogaJosen-06", "YogaJosen-07", "YogaJosen-08", "YogaJosen-09", "YogaJosen-10", "YogaJosen-11", "Penny4YourThoughts", "TryAgain", "NetworkConsultant", "UnnaturalSelection", "DiningOut", "Consequential", "Lib+Ron-01", "Lib+Ron-02", "Lib+Ron-03", "Lib+Ron-04", "Lib+Ron-05", "Lib+Ron-06", "Lib+Ron-07", "Lib+Ron-08", "Lib+Ron-09"];
 
 
-var allButtonIds = ["buttonShowAll", "buttonShowYoga", "buttonStickPeople"];
+var allButtonIds = ["buttonShowAll", "buttonShowYoga", "buttonLibAndRon", "buttonStickPeople"];
 
 function hideAllArchiveItems() {
 	var archiveItemsArrayLength = allArchiveItemIds.length;
@@ -858,6 +859,24 @@ function showStickPeople() {
 	showAllButtons();
 	hideOneButton("buttonStickPeople");
 	}	
+
+function showLibAndRon() {
+	hideAllArchiveItems();
+	document.getElementById("Lib+Ron-01").style.display="block";
+	document.getElementById("Lib+Ron-02").style.display="block";
+	document.getElementById("Lib+Ron-03").style.display="block";
+	document.getElementById("Lib+Ron-04").style.display="block";
+	document.getElementById("Lib+Ron-05").style.display="block";
+	document.getElementById("Lib+Ron-06").style.display="block";
+	document.getElementById("Lib+Ron-07").style.display="block";
+	document.getElementById("Lib+Ron-08").style.display="block";
+	document.getElementById("Lib+Ron-09").style.display="block";
+	showAllButtons();
+	hideOneButton("buttonLibAndRon");
+	}	
+
+
+
 </script>
 
 </body>
