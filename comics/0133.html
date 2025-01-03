@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Prayers Answered-Flight
+<title>Prayers Answered-The Randomizer
 </title>
 <head>
 	<link rel="icon" href="images/favIconFoxonWTF.png" type="image/png" sizes="16x16">
@@ -112,78 +112,61 @@ window.onclick = function(event) {
 
 // Create a separate array for each of 3 panels
 var imagesArrayPanel1 = [
-	"images/0120-01.png", 
-	"images/0121-01.png", 
-	"images/0122-01.png", 
-	"images/0123-01.png", 
-	"images/0124-01.png", 
-	"images/0125-01.png", 
-	"images/0126-01.png", 
-	"images/0127-01.png", 
-	"images/0128-01.png", 
-	"images/0129-01.png", 
-	"images/0130-01.png", 
-	"images/0131-01.png", 
-	"images/0132-01.png",];
+	"images/prayersanswered/0120-01.png", 
+	"images/prayersanswered/0121-01.png", 
+	"images/prayersanswered/0122-01.png", 
+	"images/prayersanswered/0123-01.png", 
+	"images/prayersanswered/0124-01.png", 
+	"images/prayersanswered/0125-01.png", 
+	"images/prayersanswered/0126-01.png", 
+	"images/prayersanswered/0127-01.png", 
+	"images/prayersanswered/0128-01.png", 
+	"images/prayersanswered/0129-01.png", 
+	"images/prayersanswered/0130-01.png", 
+	"images/prayersanswered/0131-01.png", 
+	"images/prayersanswered/0132-01.png"];
 
 var imagesArrayPanel2 = [
-	"images/0120-02.png", 
-	"images/0121-02.png", 
-	"images/0122-02.png", 
-	"images/0123-02.png", 
-	"images/0124-02.png", 
-	"images/0125-02.png", 
-	"images/0126-02.png", 
-	"images/0127-02.png", 
-	"images/0128-02.png", 
-	"images/0129-02.png", 
-	"images/0130-02.png", 
-	"images/0131-02.png", 
-	"images/0132-02.png",];
+	"images/prayersanswered/0120-02.png", 
+	"images/prayersanswered/0121-02.png", 
+	"images/prayersanswered/0122-02.png", 
+	"images/prayersanswered/0123-02.png", 
+	"images/prayersanswered/0124-02.png", 
+	"images/prayersanswered/0125-02.png", 
+	"images/prayersanswered/0126-02.png", 
+	"images/prayersanswered/0127-02.png", 
+	"images/prayersanswered/0128-02.png", 
+	"images/prayersanswered/0129-02.png", 
+	"images/prayersanswered/0130-02.png", 
+	"images/prayersanswered/0131-02.png", 
+	"images/prayersanswered/0132-02.png"];
 
 var imagesArrayPanel3 = [
-	"images/0120-03.png", 
-	"images/0121-03.png", 
-	"images/0122-03.png", 
-	"images/0123-03.png", 
-	"images/0124-03.png", 
-	"images/0125-03.png", 
-	"images/0126-03.png", 
-	"images/0127-03.png", 
-	"images/0128-03.png", 
-	"images/0129-03.png", 
-	"images/0130-03.png", 
-	"images/0131-03.png", 
-	"images/0132-03.png",];
+	"images/prayersanswered/0120-03.png", 
+	"images/prayersanswered/0121-03.png", 
+	"images/prayersanswered/0122-03.png", 
+	"images/prayersanswered/0123-03.png", 
+	"images/prayersanswered/0124-03.png", 
+	"images/prayersanswered/0125-03.png", 
+	"images/prayersanswered/0126-03.png", 
+	"images/prayersanswered/0127-03.png", 
+	"images/prayersanswered/0128-03.png", 
+	"images/prayersanswered/0129-03.png", 
+	"images/prayersanswered/0130-03.png", 
+	"images/prayersanswered/0131-03.png", 
+	"images/prayersanswered/0132-03.png"];
 	
-// Create a separate function to display a random image for each of 3 panels
-	
-function displayImagePanel1(){
-    //the first statement should generate a random number in the range 0 to 12 (the subscript values of the image file names in the imagesArray)
-    var numPanel1 = Math.floor(Math.random() * (imagesArrayPanel1.length+1));
-    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
-    document.canvas1.src = imagesArrayPanel1[numPanel1];
-    }
-	
-function displayImagePanel2(){
-    //the first statement should generate a random number in the range 0 to 12 (the subscript values of the image file names in the imagesArray)
-    var numPanel2 = Math.floor(Math.random() * (imagesArrayPanel2.length+1));
-    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
-    document.canvas2.src = imagesArrayPanel2[numPanel2];
-    }	
-
-function displayImagePanel3(){
-    //the first statement should generate a random number in the range 0 to 12 (the subscript values of the image file names in the imagesArray)
-    var numPanel3 = Math.floor(Math.random() * (imagesArrayPanel3.length+1));
-    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
-    document.canvas3.src = imagesArrayPanel3[numPanel3];	
-    }
 
 // A function that runs all image randomization functions
 function displayImageAllPanels(){
-	displayImagePanel1();
-	displayImagePanel2();
-	displayImagePanel3();
+    //the first statement should generate a random number equal to the number of options for each panel
+    var numPanel1 = Math.floor(Math.random() * (imagesArrayPanel1.length));
+    var numPanel2 = Math.floor(Math.random() * (imagesArrayPanel2.length));
+    var numPanel3 = Math.floor(Math.random() * (imagesArrayPanel3.length));
+    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+    document.canvas1.src = imagesArrayPanel1[numPanel1];
+    document.canvas2.src = imagesArrayPanel2[numPanel2];
+	document.canvas3.src = imagesArrayPanel3[numPanel3];
 	}
 
 
