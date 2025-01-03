@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Prayers Answered-Lost Parents
+<title>Prayers Answered-The Randomizer
 </title>
 <head>
 	<link rel="icon" href="images/favIconFoxonWTF.png" type="image/png" sizes="16x16">
@@ -23,6 +23,8 @@
 	</script>
 </head>
 <body>
+<!-- Run Comic Randomizer on Pageload -->
+<body onload="displayImageAllPanels();">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -46,25 +48,28 @@
   <!-- Comic Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
     
-      	<div > <img src="images/prayersanswered/0133-01.png" class="center" alt="" style="width:100%"></div> 
+    	
+    	<div><a href="0120.html">To see the source comics without randomizaton, start here.</a></div>
+    	    <br>
+    		<br>
+   		<div><input onclick="displayImageAllPanels()" type=button value="Create Random Prayer Comic" color="green"></div>
+    		<br>
+    		<br>
+      	<div > <img src="blank1.png" name="canvas1" class="center" alt="" style="width:100%"></div> 
     	  	<br>
     	  	<br>
-      	<div > <img src="images/prayersanswered/0133-02.png" class="center" alt="" style="width:100%"></div> 
+      	<div > <img src="blank2.png" name="canvas2" class="center" alt="" style="width:100%"></div> 
     	  	<br>
     	  	<br>
-      	<div > <img src="images/prayersanswered/0133-03.png" class="center" alt="" style="width:100%"></div> 
+      	<div > <img src="blank3.png" name="canvas3" class="center" alt="" style="width:100%"></div> 
        	   	<br>
       	  	<br>
 
-
-
-     	
 		<div class="w3-row w3-padding-32">
 			<p align="center">
 				<table style="width:40%" align="center">
 			  		<tr>
-   				 		<th><a href="0132.html">Previous</a></th>
-   				 		<th><a href="0134.html">Next</a></th>
+   				 		<th><a href="0133.html">Previous</a></th>
   				  	</tr>
   				 </table>
   			</p>
@@ -104,6 +109,72 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Create a separate array for each of 3 panels
+var imagesArrayPanel1 = [
+	"images/prayersanswered/0120-01.png", 
+	"images/prayersanswered/0121-01.png", 
+	"images/prayersanswered/0122-01.png", 
+	"images/prayersanswered/0123-01.png", 
+	"images/prayersanswered/0124-01.png", 
+	"images/prayersanswered/0125-01.png", 
+	"images/prayersanswered/0126-01.png", 
+	"images/prayersanswered/0127-01.png", 
+	"images/prayersanswered/0128-01.png", 
+	"images/prayersanswered/0129-01.png", 
+	"images/prayersanswered/0130-01.png", 
+	"images/prayersanswered/0131-01.png", 
+	"images/prayersanswered/0132-01.png",
+	"images/prayersanswered/0133-01.png"
+	];
+
+var imagesArrayPanel2 = [
+	"images/prayersanswered/0120-02.png", 
+	"images/prayersanswered/0121-02.png", 
+	"images/prayersanswered/0122-02.png", 
+	"images/prayersanswered/0123-02.png", 
+	"images/prayersanswered/0124-02.png", 
+	"images/prayersanswered/0125-02.png", 
+	"images/prayersanswered/0126-02.png", 
+	"images/prayersanswered/0127-02.png", 
+	"images/prayersanswered/0128-02.png", 
+	"images/prayersanswered/0129-02.png", 
+	"images/prayersanswered/0130-02.png", 
+	"images/prayersanswered/0131-02.png", 
+	"images/prayersanswered/0132-02.png",
+	"images/prayersanswered/0133-02.png"
+	];
+
+var imagesArrayPanel3 = [
+	"images/prayersanswered/0120-03.png", 
+	"images/prayersanswered/0121-03.png", 
+	"images/prayersanswered/0122-03.png", 
+	"images/prayersanswered/0123-03.png", 
+	"images/prayersanswered/0124-03.png", 
+	"images/prayersanswered/0125-03.png", 
+	"images/prayersanswered/0126-03.png", 
+	"images/prayersanswered/0127-03.png", 
+	"images/prayersanswered/0128-03.png", 
+	"images/prayersanswered/0129-03.png", 
+	"images/prayersanswered/0130-03.png", 
+	"images/prayersanswered/0131-03.png", 
+	"images/prayersanswered/0132-03.png",
+	"images/prayersanswered/0133-03.png"
+	];
+	
+
+// A function that runs all image randomization functions
+function displayImageAllPanels(){
+    //the first statement should generate a random number equal to the number of options for each panel
+    var numPanel1 = Math.floor(Math.random() * (imagesArrayPanel1.length));
+    var numPanel2 = Math.floor(Math.random() * (imagesArrayPanel2.length));
+    var numPanel3 = Math.floor(Math.random() * (imagesArrayPanel3.length));
+    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+    document.canvas1.src = imagesArrayPanel1[numPanel1];
+    document.canvas2.src = imagesArrayPanel2[numPanel2];
+	document.canvas3.src = imagesArrayPanel3[numPanel3];
+	}
+
 
 </script>
 
