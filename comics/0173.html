@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Prayers Answered-The Randomizer
+</title>
+<head>
+	<link rel="icon" href="images/favIconFoxonWTF.png" type="image/png" sizes="16x16">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {font-family: "Lato", sans-serif}
+		.mySlides {display: none}
+	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNJ6EX49GP"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+		gtag('config', 'G-VNJ6EX49GP');
+	</script>
+</head>
+<body>
+<!-- Run Comic Randomizer on Pageload -->
+<body onload="displayImageAllPanels();">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-blue w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="../archive.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARCHIVE</a>
+    <a href="../about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-light-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="../archive.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ARCHIVE</a>
+  <a href="../about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Comic Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    
+    	
+    	<div><a href="0120.html">See original comics without randomization here.</a></div>
+    	    <br>
+    		<br>
+   		<div><input onclick="displayImageAllPanels()" type=button class="archiveButton" value="Make Random Comic" color="green"></div>
+    		<br>
+    		<br>
+      	<div > <img src="blank1.png" name="canvas1" class="center" alt="" style="width:100%"></div> 
+    	  	<br>
+    	  	<br>
+      	<div > <img src="blank2.png" name="canvas2" class="center" alt="" style="width:100%"></div> 
+    	  	<br>
+    	  	<br>
+      	<div > <img src="blank3.png" name="canvas3" class="center" alt="" style="width:100%"></div> 
+       	   	<br>
+      	  	<br>
+
+		<div class="w3-row w3-padding-32">
+			<p align="center">
+				<table style="width:40%" align="center">
+			  		<tr>
+   				 		<th><a href="0172.html">Previous</a></th>
+  				  	</tr>
+  				 </table>
+  			</p>
+		</div>
+      </div>
+
+<!-- End Page Content -->
+</div>
+
+
+<!-- Large Bottom Image -->
+  <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-sand w3-xlarge">
+  <a href="https://www.instagram.com/foxon.wtf/" class="fa fa-instagram w3-hover-opacity"></a>
+  <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <a href="https://www.linkedin.com/in/ravinathanprasad/" class="fa fa-linkedin w3-hover-opacity"></a>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Create a separate array for each of 3 panels
+var imagesArrayPanel1 = [
+	"images/prayersanswered/0120-01.png", 
+	"images/prayersanswered/0121-01.png", 
+	"images/prayersanswered/0122-01.png", 
+	"images/prayersanswered/0123-01.png", 
+	"images/prayersanswered/0124-01.png", 
+	"images/prayersanswered/0125-01.png", 
+	"images/prayersanswered/0126-01.png", 
+	"images/prayersanswered/0127-01.png", 
+	"images/prayersanswered/0128-01.png", 
+	"images/prayersanswered/0129-01.png", 
+	"images/prayersanswered/0130-01.png", 
+	"images/prayersanswered/0131-01.png", 
+	"images/prayersanswered/0132-01.png",
+	"images/prayersanswered/0133-01.png",
+	"images/prayersanswered/0134-01.png",
+	"images/prayersanswered/0135-01.png",
+	"images/prayersanswered/0136-01.png",
+	"images/prayersanswered/0137-01.png",
+	"images/prayersanswered/0138-01.png",
+	"images/prayersanswered/0139-01.png",
+	"images/prayersanswered/0140-01.png", 
+	"images/prayersanswered/0141-01.png", 
+	"images/prayersanswered/0142-01.png",
+	"images/prayersanswered/0143-01.png",
+	"images/prayersanswered/0144-01.png",
+	"images/prayersanswered/0145-01.png",
+	"images/prayersanswered/0146-01.png",
+	"images/prayersanswered/0147-01.png",
+	"images/prayersanswered/0148-01.png",
+	"images/prayersanswered/0149-01.png",
+	"images/prayersanswered/0150-01.png",
+	"images/prayersanswered/0151-01.png",
+	"images/prayersanswered/0152-01.png",
+	"images/prayersanswered/0153-01.png",
+	"images/prayersanswered/0154-01.png",
+	"images/prayersanswered/0155-01.png",
+	"images/prayersanswered/0156-01.png",
+	"images/prayersanswered/0157-01.png",
+	"images/prayersanswered/0158-01.png",
+	"images/prayersanswered/0159-01.png",
+	"images/prayersanswered/0160-01.png",
+	"images/prayersanswered/0161-01.png",
+	"images/prayersanswered/0162-01.png",
+	"images/prayersanswered/0163-01.png",
+	"images/prayersanswered/0164-01.png",
+	"images/prayersanswered/0165-01.png",
+	"images/prayersanswered/0166-01.png",
+	"images/prayersanswered/0167-01.png",
+	"images/prayersanswered/0168-01.png",
+	"images/prayersanswered/0169-01.png",
+	"images/prayersanswered/0170-01.png",
+	"images/prayersanswered/0171-01.png",
+	"images/prayersanswered/0172-01.png"
+	];
+
+var imagesArrayPanel2 = [
+	"images/prayersanswered/0120-02.png", 
+	"images/prayersanswered/0121-02.png", 
+	"images/prayersanswered/0122-02.png", 
+	"images/prayersanswered/0123-02.png", 
+	"images/prayersanswered/0124-02.png", 
+	"images/prayersanswered/0125-02.png", 
+	"images/prayersanswered/0126-02.png", 
+	"images/prayersanswered/0127-02.png", 
+	"images/prayersanswered/0128-02.png", 
+	"images/prayersanswered/0129-02.png", 
+	"images/prayersanswered/0130-02.png", 
+	"images/prayersanswered/0131-02.png", 
+	"images/prayersanswered/0132-02.png",
+	"images/prayersanswered/0133-02.png",
+	"images/prayersanswered/0134-02.png",
+	"images/prayersanswered/0135-02.png",
+	"images/prayersanswered/0136-02.png",
+	"images/prayersanswered/0137-02.png",
+	"images/prayersanswered/0138-02.png",
+	"images/prayersanswered/0139-02.png",
+	"images/prayersanswered/0140-02.png", 
+	"images/prayersanswered/0141-02.png", 
+	"images/prayersanswered/0142-02.png",
+	"images/prayersanswered/0143-02.png",
+	"images/prayersanswered/0144-02.png",
+	"images/prayersanswered/0145-02.png",
+	"images/prayersanswered/0146-02.png",
+	"images/prayersanswered/0147-02.png",
+	"images/prayersanswered/0148-02.png",
+	"images/prayersanswered/0149-02.png",
+	"images/prayersanswered/0150-02.png",
+	"images/prayersanswered/0151-02.png",
+	"images/prayersanswered/0152-02.png",
+	"images/prayersanswered/0153-02.png",
+	"images/prayersanswered/0154-02.png",
+	"images/prayersanswered/0155-02.png",
+	"images/prayersanswered/0156-02.png",
+	"images/prayersanswered/0157-02.png",
+	"images/prayersanswered/0158-02.png",
+	"images/prayersanswered/0159-02.png",
+	"images/prayersanswered/0160-02.png",
+	"images/prayersanswered/0161-02.png",
+	"images/prayersanswered/0162-02.png",
+	"images/prayersanswered/0163-02.png",
+	"images/prayersanswered/0164-02.png",
+	"images/prayersanswered/0165-02.png",
+	"images/prayersanswered/0166-02.png",
+	"images/prayersanswered/0167-02.png",
+	"images/prayersanswered/0168-02.png",
+	"images/prayersanswered/0169-02.png",
+	"images/prayersanswered/0170-02.png",
+	"images/prayersanswered/0171-02.png",
+	"images/prayersanswered/0172-02.png"
+	];
+
+var imagesArrayPanel3 = [
+	"images/prayersanswered/0120-03.png", 
+	"images/prayersanswered/0121-03.png", 
+	"images/prayersanswered/0122-03.png", 
+	"images/prayersanswered/0123-03.png", 
+	"images/prayersanswered/0124-03.png", 
+	"images/prayersanswered/0125-03.png", 
+	"images/prayersanswered/0126-03.png", 
+	"images/prayersanswered/0127-03.png", 
+	"images/prayersanswered/0128-03.png", 
+	"images/prayersanswered/0129-03.png", 
+	"images/prayersanswered/0130-03.png", 
+	"images/prayersanswered/0131-03.png", 
+	"images/prayersanswered/0132-03.png",
+	"images/prayersanswered/0133-03.png",
+	"images/prayersanswered/0134-03.png",
+	"images/prayersanswered/0135-03.png",
+	"images/prayersanswered/0136-03.png",
+	"images/prayersanswered/0137-03.png",
+	"images/prayersanswered/0138-03.png",
+	"images/prayersanswered/0139-03.png",
+	"images/prayersanswered/0140-03.png", 
+	"images/prayersanswered/0141-03.png", 
+	"images/prayersanswered/0142-03.png",
+	"images/prayersanswered/0143-03.png",
+	"images/prayersanswered/0144-03.png",
+	"images/prayersanswered/0145-03.png",
+	"images/prayersanswered/0146-03.png",
+	"images/prayersanswered/0147-03.png",
+	"images/prayersanswered/0148-03.png",
+	"images/prayersanswered/0149-03.png",
+	"images/prayersanswered/0150-03.png",
+	"images/prayersanswered/0151-03.png",
+	"images/prayersanswered/0152-03.png",
+	"images/prayersanswered/0153-03.png",
+	"images/prayersanswered/0154-03.png",
+	"images/prayersanswered/0155-03.png",
+	"images/prayersanswered/0156-03.png",
+	"images/prayersanswered/0157-03.png",
+	"images/prayersanswered/0158-03.png",
+	"images/prayersanswered/0159-03.png",
+	"images/prayersanswered/0160-03.png",
+	"images/prayersanswered/0161-03.png",
+	"images/prayersanswered/0162-03.png",
+	"images/prayersanswered/0163-03.png",
+	"images/prayersanswered/0164-03.png",
+	"images/prayersanswered/0165-03.png",
+	"images/prayersanswered/0166-03.png",
+	"images/prayersanswered/0167-03.png",
+	"images/prayersanswered/0168-03.png",
+	"images/prayersanswered/0169-03.png",
+	"images/prayersanswered/0170-03.png",
+	"images/prayersanswered/0171-03.png",
+	"images/prayersanswered/0172-03.png"
+	];
+	
+
+// A function that runs all image randomization functions
+function displayImageAllPanels(){
+    //the first statement should generate a random number equal to the number of options for each panel
+    var numPanel1 = Math.floor(Math.random() * (imagesArrayPanel1.length));
+    var numPanel2 = Math.floor(Math.random() * (imagesArrayPanel2.length));
+    var numPanel3 = Math.floor(Math.random() * (imagesArrayPanel3.length));
+    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+    document.canvas1.src = imagesArrayPanel1[numPanel1];
+    document.canvas2.src = imagesArrayPanel2[numPanel2];
+	document.canvas3.src = imagesArrayPanel3[numPanel3];
+	}
+
+
+</script>
+
+</body>
+</html>
